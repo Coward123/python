@@ -20,3 +20,9 @@ sys.path[0]获取脚本的位置
 sys.argv[0]获取脚本执行时的路径
 __file__同sys.argv[0]
 os.path.abspath(__file__)获取脚本本身的绝对路径
+
+pip install pillow(简单的图像处理模块PIL)
+pip install httplib2 可以长链接，urllib2不可以长链接
+os.makedirs(dir) 创建dir
+shutil.rmtree(dir)删除dir
+
