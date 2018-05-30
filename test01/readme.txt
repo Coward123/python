@@ -14,3 +14,9 @@ http://q.qlogo.cn/g?b=qq&k=[加密后的22位QQ号]&s=640&mType=friendlist
 静态小图
 http://q.qlogo.cn/g?b=qq&nk=[QQ号]&s=100&mType=QQHeadIcon&t=[当前时间的整数]
 http://q.qlogo.cn/g?b=qq&k=[加密后的22位QQ号]&mType=QQHeadIcon&t=[当前时间的整数]
+
+python知识点
+sys.path[0]获取脚本的位置
+sys.argv[0]获取脚本执行时的路径
+__file__同sys.argv[0]
+os.path.abspath(__file__)获取脚本本身的绝对路径
