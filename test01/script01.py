@@ -21,10 +21,9 @@ def add_num(img, num, filename):
     fillcolor = ImageColor.colormap.get('red')
     width, height = img.size
     draw.text((width-30, 0), str(num), font=myfont, fill=fillcolor )
-    img.save(filename, 'jpeg')
+    img.save(filename, 'png')
     return 0
 h=httplib2.Http()
-num = 0
 for target in qqlist:
     url = 'http://qlogo.store.qq.com/qzone/qqnumber/qqnumber/100'
     target = target[:-1]
@@ -33,9 +32,9 @@ for target in qqlist:
     print('当前QQ：' + target)
     url = url.replace('qqnumber', target)
     resp, content = h.request(url)
-    filename = dir + target + "headPhoto" + '.jpg'
+    filename = dir + target + "headPhoto" + '.png'
     open(filename, "wb").write(content)
-    num += 1
+    num = 1
     img = Image.open(filename)
     add_num(img, num, filename)
 print('下载完成')
