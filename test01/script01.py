@@ -34,7 +34,7 @@ for target in qqlist:
     resp, content = h.request(url)
     filename = dir + target + "headPhoto" + '.png'
     open(filename, "wb").write(content)
-    num = 1
+    num = target[0:0]
     img = Image.open(filename)
     add_num(img, num, filename)
 print('下载完成')
